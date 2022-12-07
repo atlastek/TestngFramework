@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Hotel Website Data Driven Framework">
+	<!--  listeners>
+		<listener class-name="utilities.TestNGListeners"></listener>
+	</listeners>-->
+	
+	<test name=" Actitime Login Test">
+	<parameter name = "userName" value = "admin"/>
+	<parameter name = "password" value ="manager"/>
+ 		<classes>
+			<class name="tests.ActitimeLoginTest" />
+		</classes>
+	</test>
+</suite>
