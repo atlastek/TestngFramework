@@ -1,58 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-07T18:05:19 EST" name="Default suite" finished-at="2022-12-07T18:05:36 EST" duration-ms="17468">
+  <suite started-at="2023-04-24T19:18:05 EDT" name="Default suite" finished-at="2023-04-24T19:18:09 EDT" duration-ms="4060">
     <groups>
     </groups>
-    <test started-at="2022-12-07T18:05:19 EST" name="Default test" finished-at="2022-12-07T18:05:36 EST" duration-ms="17468">
+    <test started-at="2023-04-24T19:18:05 EDT" name="Default test" finished-at="2023-04-24T19:18:09 EDT" duration-ms="4060">
       <class name="testNG.ParallelExecution">
-        <test-method signature="chromeBrowser()[pri:0, instance:testNG.ParallelExecution@6771beb3]" started-at="2022-12-07T18:05:19 EST" name="chromeBrowser" finished-at="2022-12-07T18:05:24 EST" duration-ms="4867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chromeBrowser -->
-        <test-method signature="fireFoxBrowser()[pri:0, instance:testNG.ParallelExecution@6771beb3]" started-at="2022-12-07T18:05:24 EST" name="fireFoxBrowser" finished-at="2022-12-07T18:05:36 EST" duration-ms="12525" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="fireFoxBrowser()[pri:0, instance:testNG.ParallelExecution@36fc695d]" started-at="2023-04-24T19:18:05 EDT" name="fireFoxBrowser" finished-at="2023-04-24T19:18:09 EDT" duration-ms="4008" status="FAIL">
+          <exception class="io.github.bonigarcia.wdm.WebDriverManagerException">
             <message>
-              <![CDATA[Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-5E7SJ6AA', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: ]]>
+              <![CDATA[io.github.bonigarcia.wdm.WebDriverManagerException: Error HTTP 404 executing GET http://npm.taobao.org/mirrors/geckodriver HTTP/1.1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-5E7SJ6AA', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at testNG.ParallelExecution.fireFoxBrowser(ParallelExecution.java:23)
+              <![CDATA[io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: Error HTTP 404 executing GET http://npm.taobao.org/mirrors/geckodriver HTTP/1.1
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:725)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:548)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:722)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:548)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+at testNG.ParallelExecution.fireFoxBrowser(ParallelExecution.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,9 +48,17 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: Error HTTP 404 executing GET http://npm.taobao.org/mirrors/geckodriver HTTP/1.1
+at io.github.bonigarcia.wdm.HttpClient.execute(HttpClient.java:165)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromMirror(WebDriverManager.java:993)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:1082)
+at io.github.bonigarcia.wdm.FirefoxDriverManager.getDrivers(FirefoxDriverManager.java:76)
+at io.github.bonigarcia.wdm.WebDriverManager.filterCandidateUrls(WebDriverManager.java:741)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:534)
+... 32 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- io.github.bonigarcia.wdm.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fireFoxBrowser -->
