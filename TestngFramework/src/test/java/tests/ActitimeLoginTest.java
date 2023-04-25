@@ -23,14 +23,11 @@ public class ActitimeLoginTest extends Base{
 		logger.info("Broswer Closed");
 	}
 	
-	@Test(enabled = true)
-	@Parameters({ "userName", "password" })
-	public void loginToHotelTestOne(String userName, String password) {
+	@Test	
+	public void loginToActiwebsite() {
 		acti = new ActitimeLoginPage();
 		
-		acti.singInToActitime(userName, password);
-
+		acti.singInToActitime("admin", "manager");
 
 	}
-
 }
